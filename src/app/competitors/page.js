@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useClientEffect } from 'blitz';
 import TagManager from "@/components/TagManager/TagManager";
 import Alternative from "@/components/Alternative/Alternative";
 import Footer from "@/components/Footer/Footer";
@@ -33,7 +34,7 @@ const HeroText = () => {
 };
 
 const Home = () => {
-  useEffect(() => {
+  useClientEffect(() => {
     // Your script
     var element = document.querySelector('a[href="https://app.hubspot.com/signup-hubspot/marketing?uuid=cbdbbee3-b9da-4d82-9091-8678de1ccbb8&utm_medium=virality&utm_campaign=hubspot-forms-virality&use_uuid=1&intent=marketingFreeForms&hubs_id=forms-branding-control&hubs_source=landing.konnectinsights.com&step"]');
     if (element) {
