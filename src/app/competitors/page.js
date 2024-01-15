@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import TagManager from "@/components/TagManager/TagManager";
 import Alternative from "@/components/Alternative/Alternative";
 import Footer from "@/components/Footer/Footer";
