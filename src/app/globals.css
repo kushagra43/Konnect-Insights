@@ -35,3 +35,10 @@ body{
 .animated-loop {
   animation: loop 15s linear infinite;
 }
+
+.iCJCmn {
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    display: none!important;
+}
