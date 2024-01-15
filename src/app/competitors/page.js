@@ -31,7 +31,15 @@ const HeroText = () => {
   );
 };
 
-export default function Home() {
+const Home = () => {
+  useEffect(() => {
+    // Your script
+    var element = document.querySelector('a[href="https://app.hubspot.com/signup-hubspot/marketing?uuid=cbdbbee3-b9da-4d82-9091-8678de1ccbb8&utm_medium=virality&utm_campaign=hubspot-forms-virality&use_uuid=1&intent=marketingFreeForms&hubs_id=forms-branding-control&hubs_source=landing.konnectinsights.com&step"]');
+    if (element) {
+      element.parentNode.removeChild(element);
+    }
+  }, []); // Empty dependency array means this effect runs once after the initial render
+
   return (
     <>
       <BlueBackground>
@@ -52,4 +60,6 @@ export default function Home() {
       <Footer className="mt-16" />
     </>
   );
-}
+};
+
+export default Home;
