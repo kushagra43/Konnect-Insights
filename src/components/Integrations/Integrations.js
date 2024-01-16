@@ -26,7 +26,7 @@ const Integrations = () => {
   return (
     <div className="overflow-hidden bg-[#F4F4F4] pt-10 pb-5">
       <h3 className="font-bold text-center px-5 text-sm md:text-base uppercase">
-        3000+ Integrations & 100% Data Coverage Across the Internet!
+        100% Data Coverage Across the Internet!
       </h3>
       <div className="flex gap-x-11 w-[3500px] animated-loop mt-5">
         <div className="flex gap-x-11 items-center justify-between">
