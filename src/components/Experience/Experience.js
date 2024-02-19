@@ -14,7 +14,7 @@ const Experience = () => {
           <div className="bg-[#FDF7F2] rounded-3xl ">
             <div className="flex items-center justify-center -mt-11">
               <div className="flex items-center justify-center w-[88px] h-[88px] p-4 border-[#FFE5DD] border-2 bg-white rounded-full">
-                <img src="./pillar1.svg" alt="" className="w-full h-full" />
+                <Image src="./pillar1.svg" alt="" className="w-full h-full" />
               </div>
             </div>
             <div className="pt-2.5 pb-6 px-5 flex flex-col gap-2">
@@ -35,7 +35,7 @@ const Experience = () => {
           <div className="bg-[#FFFDEB] rounded-3xl flex flex-col">
             <div className="flex items-center justify-center -mt-11">
               <div className="flex items-center justify-center w-[88px] h-[88px] p-4 border-[#FFEAC0] border-2 bg-white rounded-full">
-                <img
+                <Image
                   src="./pillar2.svg"
                   alt=""
                   className="w-full h-full object-contain"
@@ -54,7 +54,7 @@ const Experience = () => {
           <div className="bg-[#E1FDF2] rounded-3xl flex flex-col">
             <div className="flex items-center justify-center -mt-11">
               <div className="flex items-center justify-center w-[88px] h-[88px] p-4 border-[#C3FFEA] border-2 bg-white rounded-full">
-                <img src="./pillar3.svg" alt="" className="w-full h-full" />
+                <Image src="./pillar3.svg" alt="" className="w-full h-full" />
               </div>
             </div>
             <div className="pt-2.5 pb-6 px-5 flex flex-col gap-2 flex-1">
@@ -69,7 +69,7 @@ const Experience = () => {
           <div className="bg-[#E8F4FC] rounded-3xl flex flex-col">
             <div className="flex items-center justify-center -mt-11">
               <div className="flex items-center justify-center w-[88px] h-[88px] p-4 border-[#5BBCF5] border-2 bg-white rounded-full">
-                <img src="./pillar4.svg" alt="" className="w-full h-full" />
+                <Image src="./pillar4.svg" alt="" className="w-full h-full" />
               </div>
             </div>
             <div className="pt-2.5 pb-6 px-5 flex flex-col gap-2 flex-1">

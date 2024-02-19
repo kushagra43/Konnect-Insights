@@ -229,7 +229,7 @@ const Tabs = () => {
             ))}
           </div>
           <div className="flex-1 -mx-2.5">
-            <img src={`/${Tab}.png`} className="w-full" />
+            <Image src={`/${Tab}.png`} className="w-full" />
           </div>
         </div>
       </div>
