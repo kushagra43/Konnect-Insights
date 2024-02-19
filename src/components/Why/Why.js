@@ -24,7 +24,7 @@ const Why = () => {
               key={index}
               className="flex items-center justify-start flex-col"
             >
-              <Image src={`/Why${index + 1}.svg`} className="h-16" />
+              <img src={`/Why${index + 1}.svg`} className="h-16" />
               <p className="opacity-75 text-center w-4/5 mt-5 leading-tight">
                 {item}
               </p>

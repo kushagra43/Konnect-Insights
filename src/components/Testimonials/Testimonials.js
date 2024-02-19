@@ -115,7 +115,7 @@ const Card = (props) => {
         )}
       </div>
       <div className="border-t-2 py-7 px-10 h-[130px] flex gap-2.5">
-        <Image src={props.img} className="w-16 h-16 object-cover rounded-full" />
+        <img src={props.img} className="w-16 h-16 object-cover rounded-full" />
         <div>
           <h3 className="text-[#070707] font-semibold lg:text-lg">
             {props.name}
