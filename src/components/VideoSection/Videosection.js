@@ -1,19 +1,40 @@
-import React from "react";
+"use client"
+import React, { useRef, useEffect } from "react";
 import Button from "../UI/Button";
 
 const VideoSection = () => {
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      rootMargin: "0px",
+      threshold: 0.5 // Load when 50% of the iframe is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.src = "https://www.youtube.com/embed/oSsfGcgzX0o";
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    observer.observe(iframeRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div className="flex items-center justify-center">
       <div className="container pt-16">
-        {/* <div className="text-[#404040] text-center font-bold text-xl md:text-2xl lg:text-3xl">
-          4 Pillars of Customer Experience Management
-        </div> */}
         <iframe
-          src="https://www.youtube.com/embed/oSsfGcgzX0o"
+          ref={iframeRef}
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
           className="w-full aspect-video"
         ></iframe>
 
