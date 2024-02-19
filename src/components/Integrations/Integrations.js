@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Integrations = () => {
   const imageSrc = [
@@ -31,12 +32,12 @@ const Integrations = () => {
       <div className="flex gap-x-11 w-[3500px] animated-loop mt-5">
         <div className="flex gap-x-11 items-center justify-between">
           {imageSrc.map((item, index) => (
-            <img src={`/Slider/${item}.png`} key={index}></img>
+            <Image src={`/Slider/${item}.png`} key={index} />
           ))}
         </div>
         <div className="flex gap-x-11 items-center justify-between">
           {imageSrc.map((item, index) => (
-            <img src={`/Slider/${item}.png`} key={index}></img>
+            <Image src={`/Slider/${item}.png`} key={index} />
           ))}
         </div>
       </div>

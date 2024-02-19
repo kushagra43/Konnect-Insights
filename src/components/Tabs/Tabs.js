@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+
 
 const Tabs = () => {
   const [Tab, setTab] = useState(1);
@@ -227,7 +229,7 @@ const Tabs = () => {
             ))}
           </div>
           <div className="flex-1 -mx-2.5">
-            <img src={`/${Tab}.png`} className="w-full"></img>
+            <Image src={`/${Tab}.png`} className="w-full" />
           </div>
         </div>
       </div>

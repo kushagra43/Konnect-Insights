@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../UI/Button";
+import Image from "next/image";
 
 const Why = () => {
   const data = [
@@ -23,7 +24,7 @@ const Why = () => {
               key={index}
               className="flex items-center justify-start flex-col"
             >
-              <img src={`/Why${index + 1}.svg`} className="h-16" />
+              <Image src={`/Why${index + 1}.svg`} className="h-16" />
               <p className="opacity-75 text-center w-4/5 mt-5 leading-tight">
                 {item}
               </p>
